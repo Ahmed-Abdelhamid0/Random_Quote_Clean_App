@@ -9,7 +9,7 @@ import 'package:dartz/dartz.dart';
 
 class QuoteRepoImpl implements QuoteRepo {
   final NetworkInfoService networkInfo;
-  final QuoteRomoteDatasource quoteRomoteDatasource;
+  final QuoteRemoteDatasource quoteRomoteDatasource;
   final QuoteLocalDatasource quoteLocalDatasource;
 
   QuoteRepoImpl({

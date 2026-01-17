@@ -6,11 +6,11 @@ import 'package:clean_app/core/utils/strings.dart';
 import 'package:clean_app/features/random_quote/data/models/quote_model.dart';
 import 'package:http/http.dart' as http;
 
-abstract class QuoteRomoteDatasource {
+abstract class QuoteRemoteDatasource {
   Future<QuoteDataModel> getData();
 }
 
-class QuoteRomoteDatasourceImpl implements QuoteRomoteDatasource {
+class QuoteRomoteDatasourceImpl implements QuoteRemoteDatasource {
   http.Client client;
   QuoteRomoteDatasourceImpl({required this.client});
 
